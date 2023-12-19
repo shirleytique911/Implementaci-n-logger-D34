@@ -1,3 +1,4 @@
+
 const winston = require("winston");
 
 const devLogger = winston.createLogger({
@@ -18,9 +19,9 @@ const prodLogger = winston.createLogger({
   ],
 });
 
+// Utiliza process.env.NODE_ENV para verificar el entorno
+const logger = process.env.NODE_ENV === "production" ? prodLogger : devLogger;
 
-const logger = process.env.ENV === "production" ? prodLogger : devLogger;
-
-logger.info(`Winston ENV: ${process.env.ENV}`);
+logger.info(`Winston ENV: ${process.env.NODE_ENV}`);
 
 module.exports = logger;

@@ -7,3 +7,4 @@ const loggerMiddleware = function (req, res, next) {
 };
 
 module.exports = loggerMiddleware;
+

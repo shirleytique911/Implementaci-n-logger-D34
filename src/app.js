@@ -65,7 +65,7 @@ app.use(express.static(path.join(__dirname, "public"))) */
 app.use(session({
   store: MongoStore.create({
     mongoUrl: "mongodb+srv://shirleytique911:GKZraArQ50QuepXc@cluster0.dvtsniz.mongodb.net/?retryWrites=true&w=majority",
-    mongoOptions: { useNewUrlParser: true, useUnifiedTopology: true }, ttl: 3500
+    // mongoOptions: { useNewUrlParser: true, useUnifiedTopology: true }, ttl: 3500
   }),
   secret: "clavesecreta",
   resave: false,
