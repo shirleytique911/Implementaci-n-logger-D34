@@ -1,0 +1,45 @@
+body {
+    background-color: #f3f3f3; /* Fondo suave */
+    font-family: 'Arial', sans-serif; /* Tipo de letra predeterminado */
+  }
+  
+  .formularioIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta el formulario al 100% de la altura de la ventana */
+  }
+  
+  .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+   
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
+  }
+  
+  .product h2 {
+    font-size: 1.5rem; 
+    color: #333;
+    margin-bottom: 5px; 
+  }
+  
+  .product p {
+    font-size: 1rem;
+    margin-bottom: 10px; 
+  }
+  
+  .product button {
+    background-color: #6a5acd; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+
+  }
+  
+ 
